@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class EventSystemCustom : MonoBehaviour
 {
-    public UnityEvent OnNearCoin, 
+    public UnityEvent OnNearCoin, OnNearUseableItemEnter, OnNearUseableItemExit, 
         OnCoinCollectSound, OnEnterPipeSound, OnGrowUpSound, OnDiedSound;
 
     // Start is called before the first frame update
@@ -16,5 +16,7 @@ public class EventSystemCustom : MonoBehaviour
         OnCoinCollectSound = new UnityEvent();
         OnGrowUpSound = new UnityEvent();
         OnDiedSound = new UnityEvent();
+        OnNearUseableItemEnter = new UnityEvent();
+        OnNearUseableItemExit = new UnityEvent();
     }
 }

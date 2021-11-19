@@ -38,9 +38,6 @@ public class MushroomController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && 
             other.gameObject.transform.position.y > transform.position.y)
-        {
-            Debug.Log("Supposed to die");
-            Destroy(this);
-        }
+            Destroy(gameObject);
     }
 }
